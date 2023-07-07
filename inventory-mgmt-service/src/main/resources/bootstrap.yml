@@ -1,0 +1,13 @@
+spring:
+  cloud:
+    config:
+      uri: http://localhost:8889
+management:
+   endpoint:
+     refresh:
+       enabled: true
+   endpoints:
+      web:
+        exposure:
+          include:
+           - refresh

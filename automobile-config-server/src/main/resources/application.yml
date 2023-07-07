@@ -1,0 +1,19 @@
+server:
+  port: 8889
+spring:
+  cloud:
+    config:
+      server:
+          git:
+            uri: "https://abinashmishraby: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@github.com/abinashmishraby/automobile-configrepo.git"
+            default-label: main
+            refresh-rate: 70
+  security:
+    user:
+     name: configadmin
+     password: welcome1
+     roles:
+     - admin
+     #for private repo access needs to generate token and use as below
+     #"https://abinashmishraby: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@github.com/abinashmishraby/automobile-configrepo.git"
+     #"https://github.com/abinashmishraby/automobile-configrepo.git"
