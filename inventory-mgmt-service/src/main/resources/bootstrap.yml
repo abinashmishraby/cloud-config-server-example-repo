@@ -1,7 +1,12 @@
 spring:
+  profiles:
+    active:
+    - dev
   cloud:
     config:
       uri: http://localhost:8889
+      initialize-on-context-refresh: true
+      profile: dev
 management:
    endpoint:
      refresh:
@@ -9,5 +14,4 @@ management:
    endpoints:
       web:
         exposure:
-          include:
-           - refresh
+          include: "*"

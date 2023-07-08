@@ -5,8 +5,7 @@ spring:
     config:
       server:
           git:
-            uri: "https://abinashmishraby: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@github.com/abinashmishraby/automobile-configrepo.git"
-            default-label: main
+            uri: "https://github.com/abinashmishraby/automobile-configrepo.git"
             refresh-rate: 70
   security:
     user:
@@ -15,5 +14,5 @@ spring:
      roles:
      - admin
      #for private repo access needs to generate token and use as below
-     #"https://abinashmishraby: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@github.com/abinashmishraby/automobile-configrepo.git"
+     #"https://abinashmishraby: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@github.com/abinashmishraby/automobile-configrepo.git"
      #"https://github.com/abinashmishraby/automobile-configrepo.git"
