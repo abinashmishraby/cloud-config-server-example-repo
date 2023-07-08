@@ -7,8 +7,6 @@ spring:
     import:
     - configserver:http://localhost:8889
   cloud:
-    refresh:
-      enabled: true
     config:
       username: configadmin
       password: welcome1  
